@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+
+<body>
+    <script>
+
+        // constructor function
+        function Person(firstName, lastName) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.sayHello = function (name) {
+                console.log(`Hello ${name}, my name is ${this.firstName}`)
+            }
+        }
+        
+        // create objek
+        const haris = new Person("Haris", "Forger");
+        haris.sayHello("Joko")
+
+
+        const budi = new Person();
+        budi.firstName = "Budi";
+        budi.lastName = "Nugraha";
+        budi.sayHello("Joko")
+
+        console.log(haris);
+        console.log(budi);
+        
+    </script>
+</body>
+
+</html>
